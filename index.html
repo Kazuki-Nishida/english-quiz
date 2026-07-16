@@ -326,7 +326,7 @@ button{font-family:inherit;border:none;cursor:pointer;color:inherit;background:n
       <button class="btn yellow" id="btnstock">📦 ふくしゅうボックス<span class="badge" id="stockbadge">0</span></button>
       <button class="btn purple" id="btnstats">📈 きろくを みる</button>
       <button class="btn ghost" id="btntut">▶️ おはなしを みる (あそびかた)</button>
-      <!-- P8で英語版よみものを実装したら戻す: <button class="btn ghost" id="btngrammar">📖 ぶんぽうの よみもの (おとなむけ)</button> -->
+      <button class="btn ghost" id="btngrammar">📖 ぶんぽうの よみもの (おとなむけ)</button>
     </div>
     <div class="settings">
       <button class="tog" id="togsound">🔊 おと</button>
@@ -418,7 +418,84 @@ button{font-family:inherit;border:none;cursor:pointer;color:inherit;background:n
   <!-- ぶんぽうの よみもの (おとなむけ・かんじあり) -->
   <section class="screen" id="scr-grammar">
     <div class="title">📖 英文法の地図</div>
-    <div class="gsec"><p>じゅんびちゅうだよ! おたのしみに 🚧</p></div>
+    <div class="subtitle">クイズの前に読む15分 — 初級から上級まで、トピックのつながりがわかる読み物</div>
+
+    <div class="gsec">
+      <h3>0. この読み物の使い方</h3>
+      <p>これは辞書ではなく「地図」です。文法クイズ(ぶんぽう1〜3)のトピックが、なぜ存在し、互いにどうつながるのかを一気に見渡します。細かい変化はクイズの解説と表に任せて、ここでは<b>考え方の骨組み</b>だけを掴んでください。読了後にクイズを解くと、解説の吸収率が変わります。</p>
+    </div>
+
+    <div class="gsec">
+      <h3>1. 大原則 — 英語は「語順」の言語</h3>
+      <p>日本語は「てにをは」が意味を決めるので語順が自由ですが(「犬が猫を追う」=「猫を犬が追う」)、英語には助詞がありません。<b>意味は語順が決めます</b>: The dog chases the cat.(犬が猫を)⇔The cat chases the dog.(猫が犬を)— 並び順を変えると世界が変わる。これが英文法の第一原則です。</p>
+      <table class="gtbl"><tr><th>基本の語順</th><th>例</th><th>意味</th></tr>
+      <tr><td><b>主語+動詞</b></td><td>Birds fly.</td><td>鳥は飛ぶ</td></tr>
+      <tr><td><b>主語+動詞+相手(〜を)</b></td><td>I like dogs.</td><td>私は犬が好き</td></tr>
+      <tr><td><b>主語+be動詞+様子</b></td><td>She is happy.</td><td>彼女はうれしい</td></tr>
+      <tr><td><b>主語+動詞+人+物</b></td><td>Give me five!</td><td>私に5(ハイタッチ)をちょうだい</td></tr></table>
+      <p>第二原則は<b>「単数か複数か、いつも気にする」</b>こと。名詞には a を付けるか、-s を付けるか、the を付けるかを毎回選びます(日本語にはない習慣!)。第三原則は<b>「動詞は主語と時間で形を変える」</b>。この3つが全レベルを貫く背骨です。</p>
+    </div>
+
+    <div class="gsec">
+      <h3>2. 初級の土台 — 二本柱と冠詞(ぶんぽう1の範囲)</h3>
+      <p>英語の文は<b>be動詞の文</b>(〜です・〜にいる)と<b>一般動詞の文</b>(〜する)の2種類しかありません。疑問文・否定文の作り方が違うので、まず「どちらの文か」を見抜くのがすべての出発点です。</p>
+      <table class="gtbl"><tr><th></th><th>be動詞の文</th><th>一般動詞の文</th></tr>
+      <tr><td>ふつうの文</td><td>She <b>is</b> a teacher.</td><td>She <b>plays</b> the piano.</td></tr>
+      <tr><td>疑問文</td><td><b>Is</b> she a teacher?(ひっくり返す)</td><td><b>Does</b> she play...?(Do/Doesを借りる)</td></tr>
+      <tr><td>否定文</td><td>She <b>isn't</b> a teacher.(not直付け)</td><td>She <b>doesn't</b> play...(do系+not)</td></tr></table>
+      <p><b>三単現のs</b>は初級最大のルール: 主語がhe/she/it(3人称単数)で現在の文なら動詞に-s(She plays)。ただしsは主語か動詞の片方だけ — Birds fly. / A bird flies. のシーソー関係で覚えます。疑問・否定でDoesが現れると、動詞のsはDoesに吸い取られて原形に戻る(Does she play?)のも大事な仕掛けです。</p>
+      <table class="gtbl"><tr><th>冠詞</th><th>いつ使う?</th><th>例</th></tr>
+      <tr><td><b>a / an</b></td><td>数えられる名詞1つ(anは母音の音の前)</td><td>a dog / an apple / an old house</td></tr>
+      <tr><td><b>the</b></td><td>特定できる・世界に1つ・きまり文句</td><td>the sun / in the morning / play the piano</td></tr>
+      <tr><td><b>なし</b></td><td>数えられないもの・複数の一般論・スポーツ</td><td>water / I like dogs / play soccer</td></tr></table>
+      <p>代名詞は「位置」で形が決まります: 文の頭=I/he/she(〜は)、名詞の前=my/his/her(〜の)、動詞や前置詞の後ろ=me/him/her(〜を)。<b>I-my-me-mine</b>のリズム暗唱が一生モノの投資です。前置詞は絵でイメージ: in(中)/on(接触)/under(下)/to(方向→)、時間は<b>狭いほどat、広いほどin</b>(at 8時 → on 日曜 → in 7月)。</p>
+    </div>
+
+    <div class="gsec">
+      <h3>3. 中級の心臓 — 時間の語り方(ぶんぽう2の範囲)</h3>
+      <p>中級のテーマは「時間」。英語の動詞は時間で形を変え、それぞれ役割が違います。</p>
+      <table class="gtbl"><tr><th>時制</th><th>役割</th><th>例</th></tr>
+      <tr><td><b>現在形</b></td><td>ふだんの習慣・事実</td><td>I play soccer.(ふだんする)</td></tr>
+      <tr><td><b>進行形</b>(be+ing)</td><td>今この瞬間の動画</td><td>I am playing now.(今してる)</td></tr>
+      <tr><td><b>過去形</b>(-ed/不規則)</td><td>終わった出来事</td><td>I played yesterday.</td></tr>
+      <tr><td><b>未来</b>(will / be going to)</td><td>willその場の決心・going to予定</td><td>I will help! / We are going to visit Grandma.</td></tr></table>
+      <p>過去形の主役は<b>不規則動詞</b>です: go→went、eat→ate、see→saw、make→made、have→had — よく使う動詞ほど形が特別(goed×は世界中の子供が通る道)。うれしい知らせは「過去形は主語が何でも同じ形」ということ — 三単現の悩みから解放されます。疑問・否定はDid/didn'tが過去を引き受け、動詞は原形に戻ります(Did you watch...?)。</p>
+      <p><b>助動詞</b>は動詞にパワーを足す言葉: can(できる/していい)<should(したほうがいい)<must(しなければならない)の強さ順で、後ろはいつも原形。丁寧さは「遠回し」で作ります: Can you...?→<b>Could you...?</b>(していただけますか)— 過去形が丁寧語になる仕組みは、上級の仮定法への伏線です。</p>
+      <p><b>比較</b>は3点セット: -er than(より〜)/the -est(いちばん〜)/as ... as(同じくらい〜)。特別変化はgood-better-bestとbad-worse-worstの2組だけ暗唱すればOK。長い単語はmore/the most を前に置きます(more interesting)。</p>
+    </div>
+
+    <div class="gsec">
+      <h3>4. 上級の鍵① — 今とつながる過去、視点の反転(ぶんぽう3前半)</h3>
+      <p><b>現在完了(have+過去分詞)</b>は「過去の出来事が今とつながっている」ことを表す、英語らしさの塊です。I lost my key.(なくした=過去の話)とI <b>have lost</b> my key.(なくして今も困ってる)の違いが分かれば勝ち。完了(just/already/yet)・継続(for/since)・経験(ever/never)の3つの顔があり、入場チケットは過去分詞の3段変化(eat-ate-eaten、do-did-done、be-was-been)です。</p>
+      <p><b>受け身(be+過去分詞)</b>は視点の反転装置: The cat chases the mouse.(猫が追う)→The mouse <b>is chased</b> by the cat.(ねずみが追われる)。made in Japan、is called 〜、was built 〜 — 街じゅうに実物が転がっています。「した人」を言うならby、言わずにぼかせるのも受け身の便利さです。</p>
+    </div>
+
+    <div class="gsec">
+      <h3>5. 上級の鍵② — 文と文を編む技術(ぶんぽう3中盤)</h3>
+      <p>上級トピックの多くは、目的がひとつ: <b>2つの文・動作・視点を1つの文に編み込むこと</b>です。</p>
+      <table class="gtbl"><tr><th>道具</th><th>働き</th><th>例</th></tr>
+      <tr><td><b>関係代名詞</b> who/which/that</td><td>名詞を後ろから説明</td><td>a friend <b>who</b> lives in London</td></tr>
+      <tr><td><b>分詞</b> 〜ing/〜ed</td><td>関係代名詞のコンパクト版</td><td>the <b>sleeping</b> baby / a book <b>written</b> by...</td></tr>
+      <tr><td><b>間接疑問</b></td><td>疑問文を文に埋め込む(語順が戻る)</td><td>I know <b>where he lives</b>.</td></tr>
+      <tr><td><b>that節</b></td><td>意見・情報を接続</td><td>I think <b>that</b> this book is interesting.</td></tr>
+      <tr><td><b>SVO+to/原形</b></td><td>他人への願い・使役</td><td>I want <b>you to</b> come. / It <b>made me</b> cry.</td></tr></table>
+      <p>感情の-ing/-edは「<b>モノがing(させる側)、人がed(させられる側)</b>」で必ず解けます: The game was exciting. We were excited! 使役のmake(させる)とlet(させてあげる)は後ろが原形 — Let's go!のLet'sがLet us(私たちにさせて)だったという種明かしも、ここで回収されます。</p>
+    </div>
+
+    <div class="gsec">
+      <h3>6. 上級の鍵③ — もしもの世界(仮定法)</h3>
+      <p>最後の鍵は<b>「過去形=現実からの距離」</b>という発想の転換です。If I <b>were</b> a bird, I <b>would</b> fly to you.(もし鳥だったら飛んでいくのに)— 過去の話ではないのに過去形を使うのは、「現実から一歩離れている」しるし。Could you...?が丁寧なのも同じ理屈(お願いを仮の話にして押しつけを消す)です。フランス語の条件法と全く同じ発想 — 姉妹アプリのフランス語版で条件法を学んだ人は、既にこの考え方を知っています。</p>
+      <table class="gtbl"><tr><th>現実度</th><th>形</th><th>例</th></tr>
+      <tr><td>現実の条件(ありうる)</td><td>If+現在形, will</td><td>If it rains, we will stay home.(降ったら)</td></tr>
+      <tr><td>空想(現実と違う)</td><td>If+過去形, would/could</td><td>If I had wings, I would fly.(あったらなあ)</td></tr>
+      <tr><td>かなわぬ願い</td><td>I wish+過去形</td><td>I wish it were summer vacation!</td></tr></table>
+      <p>🧭 まとめの一枚絵: 初級=<b>語順と一致を守る</b>(be/do、a/-s/the、代名詞の位置) → 中級=<b>時間を語る</b>(過去・進行・未来・助動詞・比較) → 上級=<b>今とつなぐ・視点を返す・文を編む・もしもを語る</b>(完了・受身・関係詞・仮定法)。英文法は「言える世界」が段階的に広がっていく一本道です。</p>
+    </div>
+
+    <div class="gsec">
+      <h3>7. 効率的な進め方</h3>
+      <p>①この地図を一度通読 → ②ぶんぽう1を「おぼえてないことばだけ」モードで回す(be/doの反射と冠詞の習慣づけ) → ③ぶんぽう2は不規則動詞の表(ぶんぽう2の解説に常設)を横目に → ④ぶんぽう3の前に第4〜6節だけ再読。まちがえた問題は自動でふくしゅうボックスに入るので、解説と表を読んでから捕まえ直してください。かいわ(はなし1〜3)は文法の実戦例文集でもあります — クイズと会話を往復するのが最短ルートです。Good luck!</p>
+    </div>
   </section>
 
   <!-- チュートリアル (おはなし) -->
@@ -655,7 +732,7 @@ button{font-family:inherit;border:none;cursor:pointer;color:inherit;background:n
 <script src="words.js"></script>
 <script>
 "use strict";
-const APP_VER = "e8"; // こうしんしたら ばんごうを あげる
+const APP_VER = "e9"; // こうしんしたら ばんごうを あげる
 /* ================= データほぞん ================= */
 const LS_KEY = "enquiz-v1";
 const AVATARS = ["🦊","🐰","🐻","🐼","🐸","🦁","🐱","🐶","🦄","🐧","🐹","🐨"];
