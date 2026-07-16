@@ -21,7 +21,10 @@ ChromeまたはSafari推奨。公開版: https://statsbio.com/english-quiz/
 - **たんごB1(じょうず): 188語** — 性格・くらし(ニュース/お金)・学び(目標/計画)・環境とざいりょう・健康2(症状)・旅行・動詞3(agree/imagine等)・形容詞3(possible/traditional等)・副詞2・こころの言葉(peace/courage等)。the の付く唯一物(the earth 等)は 🔵the バッジで表示
 - **ぶんぽう1(しょきゅう): 100問** — be動詞 / 一般動詞・三単現のs / a・an・the / 複数形 / 代名詞 / 所有格 / 疑問文 / 否定文 / 語順(形容詞) / 前置詞、の10分野×10問。全問に保護者向け詳細解説+文法表(正解の行がハイライト表示)付き
 - **ぶんぽう2(ちゅうきゅう): 100問** — 過去形(-ed) / 不規則過去(went, ate...) / was・were・Did / 進行形(-ing) / 未来(will・be going to) / 助動詞(can・must・should) / 比較級 / 最上級 / to+動詞・動詞ing / There is・接続詞、の10分野×10問。同じく全問に表+詳細解説付き
-- 今後の予定: たんごA2/B1 → ぶんぽう2 → はなし2(Yo とママ)/はなし3(おでかけ) → B2〜C2 → ぶんぽう3 → 文法の読み物
+- **たんごB2(すごい): 184語** — 社会・政治、経済・仕事、科学技術、環境、心と健康、言葉と文化、動詞・形容詞・副詞
+- **たんごC1(たつじん): 111語** — 概念(hypothesis, paradox...)、社会問題(diversity, justice...)、論述の動詞(advocate, imply...)・形容詞(crucial, profound...)
+- **たんごC2(マスター): 82語** — 修辞(metaphor, irony...)、心の語彙(serendipity, resilience...)、文語動詞(transcend, evoke...)・形容詞(ephemeral, whimsical...)
+- 今後の予定: ぶんぽう3(上級文法100問) → 文法の読み物
 - きろく画面の🔒「じゅんびちゅう」は今後追加されるレベルです
 
 ## 機能
