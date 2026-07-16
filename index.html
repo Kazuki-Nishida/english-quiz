@@ -655,7 +655,7 @@ button{font-family:inherit;border:none;cursor:pointer;color:inherit;background:n
 <script src="words.js"></script>
 <script>
 "use strict";
-const APP_VER = "e1"; // こうしんしたら ばんごうを あげる
+const APP_VER = "e2"; // こうしんしたら ばんごうを あげる
 /* ================= データほぞん ================= */
 const LS_KEY = "enquiz-v1";
 const AVATARS = ["🦊","🐰","🐻","🐼","🐸","🦁","🐱","🐶","🦄","🐧","🐹","🐨"];
@@ -1284,6 +1284,7 @@ function renderQ(){
   const hasNoun = q.opts.some(w => w.pos === "n");
   document.getElementById("gnote").style.display = (q.dir === "jf" && hasNoun) ? "block" : "none";
   document.getElementById("expl").style.display = "none"; // かいせつは こたえてから
+  document.getElementById("expltbl").innerHTML = ""; // まえの もんだいの ひょうを けす
   document.getElementById("nextwrap").style.display = "none";
   const bn = document.getElementById("btnnext");
   bn.textContent = (quiz.i === quiz.qs.length-1) ? "けっか 🎉" : "つぎへ ▶";
