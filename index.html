@@ -655,7 +655,7 @@ button{font-family:inherit;border:none;cursor:pointer;color:inherit;background:n
 <script src="words.js"></script>
 <script>
 "use strict";
-const APP_VER = "e2"; // こうしんしたら ばんごうを あげる
+const APP_VER = "e3"; // こうしんしたら ばんごうを あげる
 /* ================= データほぞん ================= */
 const LS_KEY = "enquiz-v1";
 const AVATARS = ["🦊","🐰","🐻","🐼","🐸","🦁","🐱","🐶","🦄","🐧","🐹","🐨"];
@@ -1156,7 +1156,7 @@ function convAlign(w, name){ // せんたくしの なまえを もんだいと 
   if(!name || w.pos !== "conv") return w;
   const cur = convName(w);
   if(!cur || cur === name) return w;
-  if(/Kai est|Koto est|Yo est|Yo a dit/.test(w.fr)) return w; // いれかえ できない文は そのまま
+  if(/(Kai|Koto|Yo) is (my|five|eight)|Yo said/.test(w.fr)) return w; // いれかえ できない文(としや かぞくの じこしょうかい)は そのまま
   return Object.assign({}, w, {
     fr: w.fr.split(cur).join(name),
     ja: w.ja.split(CONV_JA[cur]).join(CONV_JA[name]),
